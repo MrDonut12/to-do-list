@@ -15,19 +15,30 @@
         <div class="hero-container">
             <div class="add-fill text-center">
                 <h1 class="main-title ">TO DO LIST</h1>
-                <form method="POST" class="fill-blank">
-                    <input name="task-name" type="text" placeholder="Add your new task here" required>
-                    <select name="prioritize">
+                <form method="GET" class="fill-blank" id="todo-form">
+                    <input name="task-name" type="text" id="task-name-input" placeholder="Add your new task here"
+                        required>
+                    <select name="prioritize" id="prioritize-input">
                         <option value="High">High</option>
                         <option value="Medium">Medium</option>
                         <option value="Low">Low</option>
                     </select>
 
-                    <button type="submit" class="submit-button">Add</button>
+                    <button type="submit" class="submit-button" id="add-btn">Add</button>
                 </form>
             </div>
         </div>
     </div>
+
+    <div class="box">
+
+        <div class="list-container">
+            <p id="empty-msg" class="text-center empty-message">🎉 No tasks yet!</p>
+            <ul id="list">
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

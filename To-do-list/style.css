@@ -7,6 +7,7 @@
 
 body {
   background: var(--main-linear-color);
+  font-family: sans-serif;
 }
 
 .main-title {
@@ -60,4 +61,48 @@ body {
 }
 .submit-button:active {
   transform: scale(1.5);
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* hoặc flex-start nếu muốn nút sát nội dung */
+  gap: 1rem; /* khoảng cách giữa text và nút xoá */
+  margin-bottom: 0.5rem;
+}
+.box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.list-container {
+  padding: var(--padding);
+  margin: var(--padding);
+  width: 50rem;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+#list {
+  list-style-type: none;
+}
+.MarkPri {
+  border-radius: 10px;
+  background-color: #ffff;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.delete-btn {
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.li-text {
+  margin: 0;
+  color: var(--main-color-2);
+  font-weight: bolder;
+}
+.completed {
+  text-decoration: line-through;
 }
